@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100&display=swap");
+body{
+  background-color: #000;
+  padding: 0;
+  margin: 0;
+}
+
+
+* 
+{
+  font-family: "Anek Latin", sans-serif;
+}
+
+
+#myChart{
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+p
+{ 
+  color: white;
+  font-size: 30px;
+}
+
+#bio
+{
+  width: 100%;
+  height: 100px;
+  font-size: 30px;
+}
+
+#maxAcc
+{
+  padding-left: 1.5%;
+  animation: 0.75s ghost cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#maxSpeed
+{
+  padding-left: 1.5%;
+  animation: 2s ghost cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#maxHorses
+{
+  padding-left: 1.5%;
+  animation: 1.5s ghost cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+#lightestWeight
+{
+  padding-left: 1.5%;
+  animation: 1.0s ghost cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+
+
+@keyframes ghost {
+  from
+  {
+     opacity: 0;
+  }
+  
+  to
+  {
+      opacity: 1;
+  }
+}
+
+.bioContainer{
+  margin-top: 25%;
+  animation: goUp 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+
+#bio {
+  animation: goUp 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  padding-left: 1.5%;
+  padding-right: 0.5%;
+  padding-bottom: 1%;
+  width: 90%;
+  height: auto;
+  color: black;
+  margin-top: 5%;
+  font-weight: 600;
+}
+
+#title{
+  animation: goUp 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  font-size: 35px;
+  font-weight: 700;
+  padding-left: 1.5%;
+  padding-top: 1.5%;
+}
+
+@keyframes goUp {
+  from{
+    opacity: 0;
+    margin-top: -120px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+
+@keyframes goDown {
+  from{
+    opacity: 0;
+    margin-bottom: -120px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+.navbar{
+  background-color: black;
+  width: 100%;
+  height: auto;
+  position: fixed;
+}

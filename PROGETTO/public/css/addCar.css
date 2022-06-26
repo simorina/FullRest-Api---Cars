@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100&display=swap");
+body
+{
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+*
+{
+    font-family: 'Anek Latin', sans-serif;
+}
+
+.menu{
+    margin-left: 1.5%;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 70px;
+}
+.menu > * {
+    margin-left: 50px;
+    width: 50%;
+    margin: 0.5%;
+}
+
+.input{
+    text-transform: lowercase;
+    background: transparent;
+    font-size: 30px;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    outline:  none;
+    transition: 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.input:focus{
+    border-color: red;
+    width: 30%;
+    font-size: 32px;
+}
+
+.input:focus::placeholder{
+    color: white;
+    margin-top: 50px;
+}
+
+.btn{
+    margin-top: 50px;
+    font-family: "Anek Latin", sans-serif;
+    font-size: 35px;
+    transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    transform-origin: left;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 20%;
+    height: auto;
+    background: transparent;
+    color: aliceblue;
+    border: 3px solid;
+    border-color: blanchedalmond;
+    text-transform: capitalize;
+
+}
+
+.btn:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+    background: red;
+    color: white;
+}
+
+#bio{
+    font-size: 30px;
+    color: white;
+    padding-left: 1.5%
+}
+
+#formTitle{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+
+
+

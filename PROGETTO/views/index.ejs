@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/indexStyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4WHEELS</title>
+</head>
+<body>
+    <div class="titleContainer">
+        <p id="title" >4WHEELS</p>
+        <hr id="title-subline">
+    </div>
+
+    <div class="menu">
+            <p id="bio" class="a">
+            What is 4WHEELS?
+            4WHEELS is a simple Restfull API that consent you to check data of car
+            (expecially supercars like Lamborghini,Bugatti,Ferrari ecc.)
+            You can retrieve,update and insert data about your favorite Cars.
+            <br>
+            <a id="ghLink" href="https://github.com/simorina/ProgettoPiattaforme/tree/master/PROGETTO">Check the GitHub Repository</a>
+            </p>
+
+        <div class="operationContainer">
+            <p class="op">Possible Operations:</p>
+            <p class="op">GET</p>
+            <p class="op">POST</p>
+            <p class="op">DELETE</p>
+            <p class="op">PUT</p>
+        </div>
+        
+        <form action="http://localhost:3000/addCar" class="c">
+            <button type="submit" id="addBtn" value="Add Car" class="btn"> Add Car</button>
+        </form>
+
+        <form action="http://localhost:3000/Charts" class="d">
+            <button type="submit" id="chartsBtn" class="btn"> Charts</button>
+        </form>
+    
+    </div>
+    
+</body>
+</html>

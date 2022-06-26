@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/addCar.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4WHEELS</title>
+</head>
+
+<body>
+    <p id="bio">
+        In this page you can add others vehicles to the database to compare wiht the others cars.
+        The form below, need to be compiled with datas that will be send to the server.
+        In case that the car is already registered,the request will fail.
+
+    </p>
+    <form action="http://localhost:3000/public" method="post" class="menu" id="addCarMenu">
+        <p id="formTitle">add a new car</p>
+        <input class="input" type="text" id="carName"  name="name" placeholder="model Name" required>
+        <input class="input" type="text" placeholder="Stable" name="stable">
+        <input class="input" type="number" step="0.01" placeholder="Max Speed[m/s]" name="speed" required/>
+        <input class="input" type="number" step="0.01" placeholder="Horsepower[hp]" name="horses" required/>
+        <input class="input" type="number" step="0.01" placeholder="Weight[kg]" name="weight" required/>
+        <input class="input" type="number" step="0.01" placeholder="Max Acceleration [m/s&#178;]" name="acceleration" required/>
+        <button id="sendButton" class="btn">SEND</button>
+    </form>
+
+</body>
+</html>
