@@ -108,9 +108,7 @@ function updateChart()
       car.TW.name + " has the lightest weight: " + car.TW.value + " [Kg] ";
 
       document.getElementById('maxHorses').innerHTML=
-      car.TH.name + " has more horses: " + car.TH.value + "[cv]";
-
-    
+      car.TH.name + " has more horses: " + car.TH.value + " [cv]";
     });
 }
 

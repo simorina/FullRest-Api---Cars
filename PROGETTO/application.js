@@ -160,22 +160,26 @@ app.put('/editStats',(req,res)=>
       if(parser[i].id==id)
       {
         check=true;
-        if(speed == undefined || acc == undefined || weight == undefined  || stable == undefined  || horses == undefined  || res.name == undefined)
-        {
-          res.status('400').send('ERROR! maybe you have sent an uncompleted request(all fields required)');
+        if(speed == undefined || acc == undefined || weight == undefined  || stable == undefined  || horses == undefined)
+        { 
+          res.status(400).send('ERROR! maybe you have sent an uncompleted request(all fields required)');
         }
-        else{
+        else
+        {
           parser[i].acceleration=acc;
           parser[i].stable=stable;
           parser[i].horses= horses;
           parser[i].weight=weight;
           parser[i].speed=speed;
           data.writeFileSync("public/cars.json",JSON.stringify(parser));
-          res.status('200').send("car with id number: " + id + " updated");
+          res.status(200).send("car with id number: " + id + " updated");
          
         }
       }
-      res.status('404').send("no car found with the id n°: " + id + "please check the car id...");
+    }
+
+    if(!check){
+      res.status(404).send("no car found with the id n°: " + id + "please check the car id...");
     }
   };
 });
