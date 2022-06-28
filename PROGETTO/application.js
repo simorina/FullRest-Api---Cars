@@ -153,6 +153,7 @@ app.put('/editStats',(req,res)=>
   let speed = req.body.speed;
   let horses = req.body.horses;
   let weight = req.body.weight;
+  let name =req.body.name;
   if(id != null)
   {
     for(let i=0; i < parser.length; i++)
@@ -160,7 +161,7 @@ app.put('/editStats',(req,res)=>
       if(parser[i].id==id)
       {
         check=true;
-        if(speed == undefined || acc == undefined || weight == undefined  || stable == undefined  || horses == undefined)
+        if(speed == undefined || acc == undefined || weight == undefined  || stable == undefined  || horses == undefined || name== undefined)
         { 
           res.status(400).send('ERROR! maybe you have sent an uncompleted request(all fields required)');
         }
@@ -171,6 +172,7 @@ app.put('/editStats',(req,res)=>
           parser[i].horses= horses;
           parser[i].weight=weight;
           parser[i].speed=speed;
+          parser[i].name=name;
           data.writeFileSync("public/cars.json",JSON.stringify(parser));
           res.status(200).send("car with id number: " + id + " updated");
          
